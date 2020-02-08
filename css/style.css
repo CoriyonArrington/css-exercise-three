@@ -1,21 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #333;
   font-family: sans-serif;
   font-size: 10px;
 }
 
+/* the nav is the bar on top of the restaurant list */
+nav {
+  margin: 0 auto;
+  width: 420px;
+  position: fixed;
+  background-color: #111;
+  padding: 15px 0 15px 15px;
+  /* top, right, bottom, left */
+  /* why does the right one not do anything when it's changed? */
+}
+
+/* the container affects the area around the restaurants. */
 .container {
   margin: 0 auto;
   width: 420px;
 }
 
-nav {
-  margin: 0 auto;
-  padding: 10px 0 15px 15px;
-  position: fixed;
-  width: 420px;
-}
-
+/* the restaurant list is basically the entire box of restaurants */
 .restaurant-list {
   padding-top: 50px;
+  /* why 50px works here I'm not really sure? */
+  width: 100%;;
+}
+
+.location {
+  padding: 3%;
+  /* when should we use percent vs px for padding?
+  Also, this is 3% of what? */
+  width: 100%;
+  float: right;
+  border-bottom: 1px solid gray;
+  background-color: #d7d7d7;
+}
+
+.arrow {
+  width: 7%;
+  display: inline-block;
+  float: right;
+  padding: 1.5%;
+  /* Again, not really sure why 1.5% worked but it seems to look centered */
+}
+
+.content {
+  width: 80%;
+  display: inline-block;
+}
+
+ .content h1 {
+   font-size: 20px;
+   font-weight: bold;
+ }
+
+ .content h3 {
+   font-size: 14px;
+ }
+
+.location:hover {
+  background-color: #fca627;
 }
