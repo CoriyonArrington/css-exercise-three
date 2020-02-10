@@ -15,8 +15,6 @@ nav {
   position: fixed;
   background-color: #111;
   padding: 15px 0 15px 15px;
-  /* top, right, bottom, left */
-  /* why does the right one not do anything when it's changed? */
 }
 
 /* the container affects the area around the restaurants. */
@@ -28,14 +26,11 @@ nav {
 /* the restaurant list is basically the entire box of restaurants */
 .restaurant-list {
   padding-top: 50px;
-  /* why 50px works here I'm not really sure? */
   width: 100%;;
 }
 
 .location {
-  padding: 3%;
-  /* when should we use percent vs px for padding?
-  Also, this is 3% of what? */
+  padding: 10px;
   width: 100%;
   float: right;
   border-bottom: 1px solid gray;
@@ -46,8 +41,7 @@ nav {
   width: 7%;
   display: inline-block;
   float: right;
-  padding: 1.5%;
-  /* Again, not really sure why 1.5% worked but it seems to look centered */
+  padding: 5px;
 }
 
 .content {
